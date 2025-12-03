@@ -22,6 +22,8 @@ pattern_prec = re.compile(r"Precursor 수:\s*(\d+)")
 pattern_time = re.compile(r"시간:\s*([0-9\.]+)")
 pattern_node = re.compile(r"노드:\s*(\S+)")
 
+t = pd.DataFrame()
+
 non_internal_junctions = {}
 num_rerr = {}
 sum_precursor = {}
